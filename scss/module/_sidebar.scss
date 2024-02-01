@@ -1,0 +1,45 @@
+/* Seperate section containers inherit from this module */
+
+.sidebar-section {
+  display: none;
+  display: block;
+  position: static;
+  width: 20%;
+  border-right: 1px solid red;
+  float: left;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      text-align: center;
+    }
+  }
+
+  .sidebar__socials {
+    display: flex;
+    gap: 20px;
+  }
+
+  .sidebar__navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    li {
+      font-weight: 600;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}

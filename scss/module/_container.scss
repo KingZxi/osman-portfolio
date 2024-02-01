@@ -1,0 +1,14 @@
+/* Container */
+
+.container {
+  @extend %center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

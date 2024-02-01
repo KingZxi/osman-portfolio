@@ -1,0 +1,16 @@
+/* Mixins: */
+
+@mixin s-e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin s-m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+@mixin mq() {
+}
