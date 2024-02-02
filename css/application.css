@@ -449,6 +449,24 @@ template {
   flex-direction: column;
 }
 
+/* Project import */
+/* Header Module: */
+.header {
+  width: auto;
+  height: 300px;
+  background: linear-gradient(170deg, #1f3548 40%, #14232f 80%, #14232f 100%);
+}
+.header div {
+  display: flex;
+}
+.header div h1 {
+  display: flex;
+  vertical-align: middle;
+  margin: auto;
+  margin-top: 90px;
+  font-size: 2.25rem;
+}
+
 /* Sidebar import */
 /* Seperate section containers inherit from this module */
 .sidebar-section {
@@ -532,7 +550,7 @@ template {
 /* Project import */
 /* Contact form module: */
 .contact {
-  width: 70%;
+  width: 90%;
   height: 100%;
   margin: auto;
   margin-bottom: 20px;

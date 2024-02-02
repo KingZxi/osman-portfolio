@@ -1,0 +1,24 @@
+/* Header Module: */
+
+.header {
+  width: auto;
+  height: 300px;
+  background: linear-gradient(
+    170deg,
+    lighten($prussian-blue, 2%) 40%,
+    darken($prussian-blue, 5%) 80%,
+    darken($prussian-blue, 5%) 100%
+  );
+
+  div {
+    display: flex;
+
+    h1 {
+      display: flex;
+      vertical-align: middle;
+      margin: auto;
+      margin-top: 90px;
+      font-size: 2.25rem;
+    }
+  }
+}
