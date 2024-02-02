@@ -2,11 +2,15 @@
 
 .sidebar-section {
   display: none;
-  display: block;
+  //display: block;
   position: static;
   width: 20%;
+  height: 1000px; //Temp value until I can make this thing take the whole page
   border-right: 1px solid red;
   float: left;
+  margin: 0;
+  margin-right: 10px;
+  padding: 0 10px;
 }
 
 .sidebar {
