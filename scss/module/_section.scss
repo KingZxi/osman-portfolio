@@ -3,4 +3,29 @@
 [class$="-section"] {
   padding-left: 10px;
   padding-right: 10px;
+  margin: auto;
+
+  @include mq(small) {
+    width: 100%;
+  }
+
+  @include mq(medium) {
+    width: 80%;
+  }
+
+  @include mq(large) {
+    width: 70%;
+  }
+
+  @include mq(x-large) {
+    width: 60%;
+  }
+}
+
+.divider {
+  height: 30px;
+  border-bottom: 2px solid darken($tiffany-blue, 20%);
+  // border-bottom-right-radius: 5px;
+  margin-bottom: 20px;
+  // margin-right: 10px;
 }

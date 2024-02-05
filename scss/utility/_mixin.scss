@@ -12,5 +12,28 @@
   }
 }
 
-@mixin mq() {
+@mixin mq($size) {
+  @if $size == "small" {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+
+  @if $size == "medium" {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $size == "large" {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $size == "x-large" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
 }

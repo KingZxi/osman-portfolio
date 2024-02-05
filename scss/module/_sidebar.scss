@@ -47,3 +47,24 @@
     }
   }
 }
+
+.sidebar__button {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+
+  span {
+    font-size: 48px;
+    font-weight: 100;
+    //margin-right: 10px;
+    padding-right: 5px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    border: 2px solid lighten($prussian-blue, 0%);
+    background-color: lighten($prussian-blue, 5%);
+    color: lighten($tiffany-blue, 20%);
+    border-bottom-left-radius: 50px;
+  }
+}

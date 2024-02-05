@@ -2,23 +2,30 @@
 
 .header {
   width: auto;
-  height: 300px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(
-    170deg,
-    lighten($prussian-blue, 2%) 40%,
-    darken($prussian-blue, 5%) 80%,
+    150deg,
+    lighten($prussian-blue, 2%) 0%,
+    darken($prussian-blue, 5%) 50%,
     darken($prussian-blue, 5%) 100%
   );
 
-  div {
+  .header-container {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 40vh;
 
     h1 {
       display: flex;
-      vertical-align: middle;
-      margin: auto;
-      margin-top: 90px;
-      font-size: 2.25rem;
+      font-size: 3rem;
+      text-align: center;
+      flex-grow: 1;
     }
   }
 }

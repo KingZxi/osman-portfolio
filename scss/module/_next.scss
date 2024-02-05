@@ -1,0 +1,51 @@
+.next-button {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+  cursor: pointer;
+  span {
+    align-self: center;
+  }
+
+  @include s-e(text) {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: lighten($tiffany-blue, 20%);
+  }
+
+  .icon-arrow-down2 {
+    font-size: 1rem;
+    color: lighten($tiffany-blue, 20%);
+  }
+
+  .icon-arrow-down2:after {
+    font-family: "icomoon" !important;
+  }
+}
+
+.back-button {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+  cursor: pointer;
+  span {
+    align-self: center;
+  }
+
+  @include s-e(text) {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: lighten($tiffany-blue, 20%);
+  }
+
+  .icon-arrow-up2 {
+    font-size: 1rem;
+    color: lighten($tiffany-blue, 20%);
+  }
+
+  .icon-arrow-up2:before {
+    font-family: "icomoon" !important;
+  }
+}

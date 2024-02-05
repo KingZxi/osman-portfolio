@@ -19,6 +19,26 @@ body {
   background-color: #14232f;
 }
 
+h2,
+.h2 {
+  font-size: 2rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+p,
+span,
+label {
+  color: #d9d9d9;
+}
+
 /* Font and icon Import */
 @font-face {
   font-family: "icomoon";
@@ -433,6 +453,33 @@ template {
 [class$=-section] {
   padding-left: 10px;
   padding-right: 10px;
+  margin: auto;
+}
+@media (min-width: 576px) {
+  [class$=-section] {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  [class$=-section] {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  [class$=-section] {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  [class$=-section] {
+    width: 60%;
+  }
+}
+
+.divider {
+  height: 30px;
+  border-bottom: 2px solid #39a1ab;
+  margin-bottom: 20px;
 }
 
 /* Container import: */
@@ -449,22 +496,76 @@ template {
   flex-direction: column;
 }
 
-/* Project import */
+/* Header import */
 /* Header Module: */
 .header {
   width: auto;
-  height: 300px;
-  background: linear-gradient(170deg, #1f3548 40%, #14232f 80%, #14232f 100%);
-}
-.header div {
+  height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(150deg, #1f3548 0%, #14232f 50%, #14232f 100%);
 }
-.header div h1 {
+.header .header-container {
   display: flex;
-  vertical-align: middle;
-  margin: auto;
-  margin-top: 90px;
-  font-size: 2.25rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  gap: 40vh;
+}
+.header .header-container h1 {
+  display: flex;
+  font-size: 3rem;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Next button import */
+.next-button {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+  cursor: pointer;
+}
+.next-button span {
+  align-self: center;
+}
+.next-button__text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #c5e8ec;
+}
+.next-button .icon-arrow-down2 {
+  font-size: 1rem;
+  color: #c5e8ec;
+}
+.next-button .icon-arrow-down2:after {
+  font-family: "icomoon" !important;
+}
+
+.back-button {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+  cursor: pointer;
+}
+.back-button span {
+  align-self: center;
+}
+.back-button__text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #c5e8ec;
+}
+.back-button .icon-arrow-up2 {
+  font-size: 1rem;
+  color: #c5e8ec;
+}
+.back-button .icon-arrow-up2:before {
+  font-family: "icomoon" !important;
 }
 
 /* Sidebar import */
@@ -511,6 +612,25 @@ template {
   cursor: pointer;
 }
 
+.sidebar__button {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+.sidebar__button span {
+  font-size: 48px;
+  font-weight: 100;
+  padding-right: 5px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  border: 2px solid #1c3041;
+  background-color: #243d53;
+  color: #c5e8ec;
+  border-bottom-left-radius: 50px;
+}
+
 /* Project import */
 /* Project styles: */
 .projects-section h2 {
@@ -521,6 +641,7 @@ template {
 .projects__element {
   margin-top: 30px;
   margin-bottom: 30px;
+  box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
 }
 .projects__element img {
   width: 100%;
@@ -533,9 +654,11 @@ template {
 }
 .projects__element p {
   margin-left: 20px;
+  margin-right: 10px;
 }
 .projects__element span {
   margin-left: 20px;
+  font-size: 1em;
 }
 .projects__element--info {
   margin-top: -25px;
@@ -545,9 +668,48 @@ template {
   border-top: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  background-color: #1c3041;
 }
 
-/* Project import */
+/* About import */
+/* About us module */
+.about-container {
+  display: grid;
+  place-items: center;
+}
+@media (min-width: 1200px) {
+  .about-container {
+    display: block;
+  }
+}
+.about-container .profile-picture {
+  display: grid;
+  float: right;
+}
+.about-container .profile-picture img {
+  margin: auto;
+  margin-bottom: 20px;
+  border: 3px solid #78cad2;
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 1200px) {
+  .about-container .profile-picture {
+    display: block;
+    margin-right: 10rem;
+    margin-left: 7.5rem;
+    margin-bottom: 2rem;
+  }
+  .about-container .profile-picture img {
+    width: 20rem;
+    height: 20rem;
+    margin: 0;
+  }
+}
+
+/* Contact import */
 /* Contact form module: */
 .contact {
   width: 90%;
@@ -555,39 +717,73 @@ template {
   margin: auto;
   margin-bottom: 20px;
   border: 1px solid #78cad2;
+  border-radius: 5px;
   padding: 20px;
-  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  background-color: #1c3041;
+  box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
 }
 .contact__form {
   display: flex;
   flex-direction: row;
-  gap: 20px;
   flex-wrap: wrap;
   vertical-align: middle;
+  gap: 30px;
 }
-.contact__form__field label {
+.contact__form__field {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+  width: 100%;
 }
-.contact__form__field label small {
-  float: right;
+.contact__form__field small {
   margin-top: 5px;
   font-size: 10px;
   color: #808080;
 }
-.contact__form__field textarea {
+.contact__form label {
+  font-weight: 700;
+}
+.contact__form input {
+  height: 100%;
+}
+.contact__form textarea {
   height: 80%;
+  padding-top: 20px;
 }
-.contact__form__field input,
-.contact__form__field textarea {
-  border: 1px solid #b3b3b3;
-  width: 100%;
+.contact__form input,
+.contact__form textarea {
+  width: 95%;
+  margin-top: 10px;
   margin-left: 10px;
+  padding-left: 15px;
+  border-radius: 5px;
+  background-color: #14232f;
+  border: 1px solid #b3b3b3;
+  color: #fff;
 }
-.contact__form__field input:focus-visible,
-.contact__form__field textarea:focus-visible {
+.contact__form input:focus-visible,
+.contact__form textarea:focus-visible {
   border: 1px solid #d2c8ed;
   outline: 1px solid #c5e8ec;
+}
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+  font-size: 12px;
+  color: #a6a6a6;
+}
+.contact__form input:focus-visible::placeholder,
+.contact__form textarea:focus-visible::placeholder {
+  visibility: hidden;
+}
+.contact__form textarea::placeholder {
+  padding-top: 8%;
+}
+
+/* Footer import */
+/* Footer Module */
+.footer-section .footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 /*# sourceMappingURL=application.css.map */

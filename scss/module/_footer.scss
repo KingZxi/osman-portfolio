@@ -1,0 +1,10 @@
+/* Footer Module */
+
+.footer-section {
+  //background-color: darken($prussian-blue, 5%);
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}

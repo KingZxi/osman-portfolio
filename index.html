@@ -8,10 +8,20 @@
   </head>
   <body>
     <header class="header">
-      <div class="">
-        <h1>Osman's Portfolio</h1>
-      </div>
+      <section class="header-section">
+        <div class="header-container">
+          <div></div>
+          <div><h1>Portfolio</h1></div>
+          <div class="next-button">
+            <span class="next-button__text">Next Section</span>
+            <span class="icon-arrow-down2"></span>
+          </div>
+        </div>
+      </section>
     </header>
+    <div class="sidebar__button">
+      <span class="icon-menu"></span>
+    </div>
     <section class="sidebar-section">
       <div class="sidebar">
         <!-- Logo -->
@@ -32,22 +42,52 @@
         </ul>
       </div>
     </section>
+    <div class="divider"></div>
     <section class="about-section">
       <h2>About Me</h2>
-      <p>
-        My name is Osman, I am an aspiring junior web-developer and programmer,
-        (I don't really know what else to put here right now, so gonna add some
-        placeholder text).
-      </p>
-      <p>
-        Suspendisse potenti. Suspendisse blandit urna sem, id euismod nibh
-        facilisis consequat. Donec pulvinar faucibus nisl, non placerat est
-        consequat non. Duis at lorem et ipsum lobortis semper. Proin tincidunt
-        ultrices elementum. Sed lacinia mauris pulvinar, bibendum urna nec,
-        vestibulum ex. Proin id accumsan elit, eu pretium urna. Duis vehicula
-        erat ac diam hendrerit, in lobortis arcu bibendum. Ut id mollis quam.
-      </p>
+      <div class="about-container">
+        <div class="profile-picture">
+          <img class="profile-picture" src="/img/profile_placeholder.png" />
+        </div>
+        <p class="text1">
+          My name is Osman, I am an aspiring junior web-developer and
+          programmer, (I don't really know what else to put here right now, so
+          gonna add some placeholder text). In venenatis interdum turpis, quis
+          tristique sem bibendum eget. Nunc lobortis pellentesque placerat. In
+          faucibus velit at justo tincidunt, quis iaculis ante sagittis. Nam
+          viverra, lectus quis lobortis consequat, magna elit pharetra lorem,
+          ullamcorper blandit lacus nulla quis enim. Pellentesque nec elit eu
+          lorem mattis convallis sed at urna. Donec id vehicula magna. Duis
+          suscipit pretium nulla eget fermentum. Aliquam dictum cursus ante vel
+          ornare. Suspendisse ut metus sit amet nibh ultrices volutpat.
+          Curabitur sit amet sodales tortor.
+        </p>
+        <p class="text2">
+          Suspendisse potenti. Suspendisse blandit urna sem, id euismod nibh
+          facilisis consequat. Donec pulvinar faucibus nisl, non placerat est
+          consequat non. Duis at lorem et ipsum lobortis semper. Proin tincidunt
+          ultrices elementum. Sed lacinia mauris pulvinar, bibendum urna nec,
+          vestibulum ex. Proin id accumsan elit, eu pretium urna. Duis vehicula
+          erat ac diam hendrerit, in lobortis arcu bibendum. Ut id mollis quam.
+        </p>
+        <p class="text3">
+          Nam feugiat ut dolor eu condimentum. Nulla tristique gravida dolor
+          imperdiet pretium. Aenean hendrerit tristique dui in convallis. Ut
+          bibendum quis tortor eget vehicula. Cras finibus diam enim, vel
+          accumsan sem ullamcorper in. Vivamus dapibus erat interdum turpis
+          mattis, sed porta tortor bibendum. Sed erat nunc, malesuada id velit
+          sed, sagittis interdum mi. Mauris vestibulum est quis nisl facilisis,
+          sit amet commodo justo malesuada. Nulla non molestie diam, vitae
+          dapibus nisl. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas.
+        </p>
+        <div class="next-button">
+          <span class="next-button__text">Next Section</span>
+          <span class="icon-arrow-down2"></span>
+        </div>
+      </div>
     </section>
+    <div class="divider"></div>
     <section class="projects-section">
       <div class="center container">
         <h2>Projects</h2>
@@ -85,40 +125,76 @@
           <div class="projects__element"></div>
           <div class="projects__element"></div>
         </div>
+        <div class="next-button">
+          <span class="next-button__text">Next Section</span>
+          <span class="icon-arrow-down2"></span>
+        </div>
       </div>
     </section>
+    <div class="divider"></div>
     <section class="contact-section">
       <h2>Contact:</h2>
       <div class="contact">
         <form class="contact__form">
           <!-- This form is to include a first name, last name, email address, subject, and message area (which is a textbox) -->
           <div class="contact__form__field">
-            <label>First name:</label>
-            <input />
+            <label for="first-name">First name:</label>
+            <input
+              id="first-name"
+              name="first-name"
+              type="text"
+              required
+              placeholder="Enter your first name"
+            />
           </div>
           <div class="contact__form__field">
-            <label>Last name:</label>
-            <input />
+            <label for="last-name">Last name:</label>
+            <input
+              id="last-name"
+              name="last-name"
+              type="text"
+              required
+              placeholder="Enter your last name"
+            />
           </div>
           <div class="contact__form__field">
-            <label>Email Address:</label>
-            <input />
+            <label for="email">Email Address:</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="Enter your email address"
+            />
           </div>
           <div class="contact__form__field">
-            <label>Phone Number: <small>(Optional)</small></label>
-            <input />
+            <label for="phone-number"
+              >Phone Number: <small>(Optional)</small></label
+            >
+            <input
+              id="phone-number"
+              name="phone-number"
+              type="tel"
+              placeholder="Enter your phone number (optional)"
+            />
           </div>
           <div class="contact__form__field">
-            <label>Message:</label>
-            <textarea> </textarea>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required> </textarea>
+            <!-- placeholder="Enter your message here" -->
           </div>
         </form>
       </div>
     </section>
+    <div class="divider"></div>
     <footer>
       <section class="footer-section">
-        <div>
-          <span>Sitemap</span>
+        <div class="back-button">
+          <span class="icon-arrow-up2"></span>
+          <span class="next-button__text">Back to Top</span>
+        </div>
+        <div class="footer-container">
+          <!-- <span>Sitemap</span> -->
         </div>
       </section>
     </footer>
