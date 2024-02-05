@@ -622,6 +622,7 @@ template {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 10;
   background-color: #1c3041;
 }
 @media (min-width: 768px) {
@@ -647,6 +648,10 @@ template {
   display: flex;
   font-size: 3rem;
   gap: 2.5rem;
+  cursor: pointer;
+}
+.sidebar .sidebar__socials span:hover {
+  color: #78cad2;
 }
 .sidebar .sidebar__navigation {
   display: flex;
@@ -660,6 +665,7 @@ template {
   position: relative;
 }
 .sidebar .sidebar__navigation li:hover {
+  color: #78cad2;
   cursor: pointer;
 }
 .sidebar .sidebar__navigation li:hover:after {
@@ -684,10 +690,16 @@ template {
 
 .sidebar__button {
   display: flex;
+  z-index: 10;
   position: fixed;
   top: 0px;
   right: 0px;
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  .sidebar__button {
+    display: none;
+  }
 }
 .sidebar__button span {
   font-size: 48px;
