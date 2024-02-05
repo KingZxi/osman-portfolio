@@ -36,4 +36,10 @@
       @content;
     }
   }
+
+  @if $size == "xx-large" {
+    @media (min-width: 1600px) {
+      @content;
+    }
+  }
 }

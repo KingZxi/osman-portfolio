@@ -615,7 +615,7 @@ template {
   float: left;
   margin: 0;
   margin-right: 10px;
-  padding: 0 10px;
+  padding: 0;
   width: 10%;
   height: 100%;
   border-right: 3px solid #243d53;
@@ -633,7 +633,8 @@ template {
 
 .sidebar {
   display: flex;
-  margin-top: 25rem;
+  height: 100%;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
@@ -646,9 +647,19 @@ template {
 }
 .sidebar .sidebar__socials {
   display: flex;
-  font-size: 3rem;
-  gap: 2.5rem;
+  font-size: 2.5rem;
+  flex-direction: column;
+  gap: 1.75rem;
+  width: 100%;
+  justify-content: center;
   cursor: pointer;
+  overflow: hidden;
+}
+@media (min-width: 1600px) {
+  .sidebar .sidebar__socials {
+    font-size: 2rem;
+    flex-direction: row;
+  }
 }
 .sidebar .sidebar__socials span:hover {
   color: #78cad2;
@@ -656,7 +667,7 @@ template {
 .sidebar .sidebar__navigation {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 3rem;
 }
 .sidebar .sidebar__navigation li {
   font-size: 1.25rem;
