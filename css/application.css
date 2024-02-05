@@ -516,9 +516,48 @@ template {
 }
 .header .header-container h1 {
   display: flex;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   flex-grow: 1;
+  color: #78cad2;
+}
+@media (min-width: 768px) {
+  .header .header-container h1 {
+    font-size: 5rem;
+  }
+}
+.header .header-container .typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #78cad2; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0em; /* Adjust as needed */
+  /* The typewriter cursor effect */
+  animation: typing 2s steps(40, end), blink-caret 2s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  25% {
+    width: 1%;
+    color: #fff;
+  }
+  to {
+    width: 100%;
+    color: #78cad2;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  25% {
+    border-color: #78cad2;
+  }
+  50% {
+    border-color: #78cad2;
+  }
 }
 
 /* Next button import */
@@ -572,18 +611,28 @@ template {
 /* Seperate section containers inherit from this module */
 .sidebar-section {
   display: none;
-  position: static;
-  width: 20%;
-  height: 1000px;
-  border-right: 1px solid red;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  border-right: 3px solid #243d53;
+  background-color: #1c3041;
   float: left;
   margin: 0;
   margin-right: 10px;
   padding: 0 10px;
 }
+@media (min-width: 768px) {
+  .sidebar-section {
+    display: block;
+  }
+}
 
 .sidebar {
   display: flex;
+  margin-top: 5rem;
   flex-direction: column;
   align-items: center;
 }
@@ -638,9 +687,20 @@ template {
   align-self: flex-start;
 }
 
+.projects {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
 .projects__element {
   margin-top: 30px;
   margin-bottom: 30px;
+  transition: 0.5s ease;
   box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
 }
 .projects__element img {
@@ -657,8 +717,14 @@ template {
   margin-right: 10px;
 }
 .projects__element span {
-  margin-left: 20px;
-  font-size: 1em;
+  margin-left: 15px;
+  font-size: 1.1rem;
+  color: #78cad2;
+}
+.projects__element .icon-arrow-right2 {
+  margin-left: 10px;
+  font-size: 1rem;
+  color: #78cad2;
 }
 .projects__element--info {
   margin-top: -25px;
@@ -669,6 +735,10 @@ template {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: #1c3041;
+}
+.projects__element:hover {
+  transition: 0.5s ease;
+  transform: translateY(-10px);
 }
 
 /* About import */
@@ -780,6 +850,9 @@ template {
 
 /* Footer import */
 /* Footer Module */
+.footer-section {
+  margin-bottom: 20px;
+}
 .footer-section .footer-container {
   display: flex;
   flex-direction: column;
