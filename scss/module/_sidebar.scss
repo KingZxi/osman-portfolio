@@ -3,17 +3,17 @@
 .sidebar-section {
   display: none;
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 10%;
-  height: 100%; //Temp value until I can make this thing take the whole page
-  border-right: 3px solid lighten($prussian-blue, 5%);
-  background-color: darken($prussian-blue, 0%);
   float: left;
   margin: 0;
   margin-right: 10px;
   padding: 0 10px;
+  width: 10%;
+  height: 100%; //Temp value until I can make this thing take the whole page
+  border-right: 3px solid lighten($prussian-blue, 5%);
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: darken($prussian-blue, 0%);
   @include mq(medium) {
     display: block;
   }
@@ -21,7 +21,7 @@
 
 .sidebar {
   display: flex;
-  margin-top: 5rem;
+  margin-top: 25rem;
   flex-direction: column;
   align-items: center;
 
@@ -36,7 +36,8 @@
 
   .sidebar__socials {
     display: flex;
-    gap: 20px;
+    font-size: 3rem;
+    gap: 2.5rem;
   }
 
   .sidebar__navigation {
@@ -45,11 +46,32 @@
     gap: 50px;
 
     li {
+      font-size: 1.25rem;
       font-weight: 600;
       text-decoration: none;
+      position: relative;
       &:hover {
-        text-decoration: underline;
         cursor: pointer;
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          height: 1px;
+          width: 100%;
+          color: $tiffany-blue;
+          background-color: currentColor;
+          animation: underline 0.5s;
+
+          @keyframes underline {
+            from {
+              width: 0;
+            }
+            to {
+              width: 100%;
+            }
+          }
+        }
       }
     }
   }
