@@ -42,4 +42,23 @@
       @content;
     }
   }
+
+  @if $size == "tablet" {
+    @media screen and (max-width: 1000px) and (orientation: landscape) {
+      @content;
+    }
+  }
+}
+
+// mqc = media query custom
+@mixin mqc($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin mql() {
+  @media screen and (orientation: landscape) {
+    @content;
+  }
 }

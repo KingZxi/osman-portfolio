@@ -491,7 +491,7 @@ template {
 }
 @media (min-width: 1200px) {
   [class$=-section] {
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -516,11 +516,18 @@ template {
 }
 
 .sidebar-margin {
-  margin-left: 0 rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
 }
 @media (min-width: 768px) {
   .sidebar-margin {
-    margin-left: 11rem;
+    margin-left: 21.5rem;
+  }
+}
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+  .sidebar-margin {
+    margin-left: 0rem;
   }
 }
 
@@ -551,7 +558,7 @@ template {
 }
 @media (min-width: 768px) {
   .header .header-container h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 992px) {
@@ -666,7 +673,8 @@ a {
   margin: 0;
   margin-right: 10px;
   padding: 0;
-  width: 15%;
+  width: 350px;
+  min-width: 15%;
   height: 100%;
   border-right: 3px solid #243d53;
   top: 0;
@@ -678,6 +686,11 @@ a {
 @media (min-width: 768px) {
   .sidebar-section {
     display: block;
+  }
+}
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+  .sidebar-section {
+    display: none;
   }
 }
 
@@ -697,6 +710,7 @@ a {
 }
 .sidebar__logo {
   margin-bottom: 30px;
+  transition: all 1s ease-in-out;
   cursor: pointer;
 }
 .sidebar__logo img {
@@ -705,7 +719,8 @@ a {
   filter: invert(100%);
 }
 .sidebar__logo:hover {
-  filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-180deg) saturate(500%) contrast(1);
+  filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-220deg) saturate(500%) contrast(1);
+  transform: translateY(-5px);
 }
 .sidebar__logo:hover:after {
   content: "";
@@ -715,7 +730,7 @@ a {
   height: 2px;
   width: 100%;
   color: #78cad2;
-  background-color: currentColor;
+  background-color: #78cad2;
   animation: underline 0.5s;
 }
 @keyframes underline {
@@ -796,6 +811,11 @@ a {
     display: none;
   }
 }
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+  .sidebar__button {
+    display: flex;
+  }
+}
 .sidebar__button span {
   font-size: 48px;
   font-weight: 100;
@@ -826,6 +846,7 @@ a {
   }
 }
 .projects__element {
+  margin: 0 15px;
   margin-top: 30px;
   margin-bottom: 30px;
   transition: 0.5s ease;
@@ -949,6 +970,7 @@ a {
 .contact__form textarea {
   height: 80%;
   padding-top: 20px;
+  resize: vertical;
 }
 .contact__form input,
 .contact__form textarea {

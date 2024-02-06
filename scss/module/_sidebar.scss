@@ -7,7 +7,8 @@
   margin: 0;
   margin-right: 10px;
   padding: 0;
-  width: 15%;
+  width: 350px;
+  min-width: 15%;
   height: 100%; //Temp value until I can make this thing take the whole page
   border-right: 3px solid lighten($prussian-blue, 5%);
   top: 0;
@@ -17,6 +18,9 @@
   background-color: darken($prussian-blue, 0%);
   @include mq(medium) {
     display: block;
+  }
+  @include mq(tablet) {
+    display: none;
   }
 }
 
@@ -38,6 +42,7 @@
 
   @include s-e(logo) {
     margin-bottom: 30px;
+    transition: all 1s ease-in-out;
     cursor: pointer;
     img {
       width: 100%;
@@ -45,9 +50,14 @@
       filter: invert(100%);
     }
 
+    // span::after {
+    //   content: "/img/calligraphy-sig.ico";
+    // }
+
     &:hover {
-      filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-180deg)
+      filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-220deg)
         saturate(500%) contrast(1);
+      transform: translateY(-5px);
 
       &:after {
         content: "";
@@ -57,7 +67,7 @@
         height: 2px;
         width: 100%;
         color: $tiffany-blue;
-        background-color: currentColor;
+        background-color: $tiffany-blue;
         animation: underline 0.5s;
 
         @keyframes underline {
@@ -137,6 +147,9 @@
   display: flex;
   @include mq(medium) {
     display: none;
+  }
+  @include mq(tablet) {
+    display: flex;
   }
   z-index: 10;
   position: fixed;

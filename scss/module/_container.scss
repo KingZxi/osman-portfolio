@@ -14,9 +14,14 @@
 }
 
 .sidebar-margin {
-  margin-left: 0 rem;
-
+  // margin-left: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
   @include mq(medium) {
-    margin-left: 11rem;
+    margin-left: 21.5rem;
+  }
+  @include mq(tablet) {
+    margin-left: 0rem;
   }
 }
