@@ -515,6 +515,15 @@ template {
   flex-direction: column;
 }
 
+.sidebar-margin {
+  margin-left: 0 rem;
+}
+@media (min-width: 768px) {
+  .sidebar-margin {
+    margin-left: 11rem;
+  }
+}
+
 /* Header import */
 /* Header Module: */
 .header {
@@ -809,7 +818,7 @@ a {
 .projects {
   cursor: pointer;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;

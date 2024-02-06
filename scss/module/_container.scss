@@ -12,3 +12,11 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.sidebar-margin {
+  margin-left: 0 rem;
+
+  @include mq(medium) {
+    margin-left: 11rem;
+  }
+}
