@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/application.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <section class="header-section">
         <div class="header-container">
           <div></div>
@@ -15,10 +15,12 @@
             <h1 class="typewriter">Osman Mahmood</h1>
             <p>I am an aspiring web developer...</p>
           </div>
-          <div class="next-button">
-            <span class="next-button__text">Next Section</span>
-            <span class="icon-arrow-down2"></span>
-          </div>
+          <a href="#about">
+            <div class="next-button">
+              <span class="next-button__text">Next Section</span>
+              <span class="icon-arrow-down2"></span>
+            </div>
+          </a>
         </div>
       </section>
     </header>
@@ -34,11 +36,11 @@
         </div>
         <!-- Navigation list -->
         <ul class="sidebar__navigation">
-          <li>About Me</li>
-          <li>My Portfolio</li>
+          <a href="#about"><li>About Me</li></a>
+          <a href="#projects"><li>My Portfolio</li></a>
           <li>Coding Examples</li>
           <li>SCS Scheme</li>
-          <li>Contact Me</li>
+          <a href="#contact"><li>Contact Me</li></a>
         </ul>
         <!-- Socials list -->
         <ul class="sidebar__socials">
@@ -61,7 +63,7 @@
       </div>
     </section>
     <div class="divider"></div>
-    <section class="about-section">
+    <section class="about-section" id="about">
       <h2>About Me</h2>
       <div class="about-container">
         <div class="profile-picture">
@@ -100,14 +102,16 @@
           dapibus nisl. Pellentesque habitant morbi tristique senectus et netus
           et malesuada fames ac turpis egestas. Read Jujutsu Kaisen.
         </p>
-        <div class="next-button">
-          <span class="next-button__text">Next Section</span>
-          <span class="icon-arrow-down2"></span>
-        </div>
+        <a href="#projects">
+          <div class="next-button">
+            <span class="next-button__text">Next Section</span>
+            <span class="icon-arrow-down2"></span>
+          </div>
+        </a>
       </div>
     </section>
     <div class="divider"></div>
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
       <div class="center container">
         <h2>Projects</h2>
         <div class="projects">
@@ -192,14 +196,16 @@
             </div>
           </div>
         </div>
-        <div class="next-button">
-          <span class="next-button__text">Next Section</span>
-          <span class="icon-arrow-down2"></span>
-        </div>
+        <a href="#contact">
+          <div class="next-button">
+            <span class="next-button__text">Next Section</span>
+            <span class="icon-arrow-down2"></span>
+          </div>
+        </a>
       </div>
     </section>
     <div class="divider"></div>
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <h2>Contact:</h2>
       <div class="contact">
         <form class="contact__form">
@@ -258,10 +264,12 @@
     <div class="divider"></div>
     <footer>
       <section class="footer-section">
-        <div class="back-button">
-          <span class="icon-arrow-up2"></span>
-          <span class="next-button__text">Back To The Top</span>
-        </div>
+        <a href="#header">
+          <div class="back-button">
+            <span class="icon-arrow-up2"></span>
+            <span class="next-button__text">Back To The Top</span>
+          </div>
+        </a>
         <div class="footer-container">
           <!-- <span>Sitemap</span> -->
         </div>

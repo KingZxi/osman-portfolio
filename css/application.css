@@ -583,6 +583,7 @@ template {
   flex-grow: 1;
   gap: 10px;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 .next-button span {
   align-self: center;
@@ -599,6 +600,9 @@ template {
 .next-button .icon-arrow-down2:after {
   font-family: "icomoon" !important;
 }
+.next-button:hover {
+  transform: translateY(-5px);
+}
 
 .back-button {
   display: flex;
@@ -606,6 +610,7 @@ template {
   flex-grow: 1;
   gap: 10px;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 .back-button span {
   align-self: center;
@@ -621,6 +626,13 @@ template {
 }
 .back-button .icon-arrow-up2:before {
   font-family: "icomoon" !important;
+}
+.back-button:hover {
+  transform: translateY(5px);
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Sidebar import */
@@ -666,10 +678,31 @@ template {
   cursor: pointer;
 }
 .sidebar__logo img {
+  width: 100%;
+  height: 100%;
   filter: invert(100%);
 }
 .sidebar__logo:hover {
   filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-180deg) saturate(500%) contrast(1);
+}
+.sidebar__logo:hover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  width: 100%;
+  color: #78cad2;
+  background-color: currentColor;
+  animation: underline 0.5s;
+}
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 .sidebar .sidebar__socials {
   display: flex;

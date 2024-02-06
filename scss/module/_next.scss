@@ -4,6 +4,7 @@
   flex-grow: 1;
   gap: 10px;
   cursor: pointer;
+  transition: transform 0.3s ease;
   span {
     align-self: center;
   }
@@ -22,6 +23,10 @@
   .icon-arrow-down2:after {
     font-family: "icomoon" !important;
   }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .back-button {
@@ -30,6 +35,7 @@
   flex-grow: 1;
   gap: 10px;
   cursor: pointer;
+  transition: transform 0.3s ease;
   span {
     align-self: center;
   }
@@ -48,4 +54,12 @@
   .icon-arrow-up2:before {
     font-family: "icomoon" !important;
   }
+
+  &:hover {
+    transform: translateY(5px);
+  }
+}
+
+a {
+  text-decoration: none;
 }
