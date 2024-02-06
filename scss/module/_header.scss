@@ -29,6 +29,14 @@
       color: lighten($tiffany-blue, 20%);
 
       @include mq(medium) {
+        font-size: 3.5rem;
+      }
+
+      @include mq(large) {
+        font-size: 4rem;
+      }
+
+      @include mq(x-large) {
         font-size: 5rem;
       }
     }

@@ -462,6 +462,9 @@ template {
 .contact__form__btn:hover {
   background-color: #3fb3be;
 }
+.contact__form__btn:active {
+  background-color: #1c3041;
+}
 
 /* Module import */
 /* Section import */
@@ -538,6 +541,16 @@ template {
   color: #c5e8ec;
 }
 @media (min-width: 768px) {
+  .header .header-container h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .header .header-container h1 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1200px) {
   .header .header-container h1 {
     font-size: 5rem;
   }
