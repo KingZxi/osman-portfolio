@@ -447,6 +447,22 @@ template {
   margin-right: auto;
 }
 
+.contact__form__btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  border-color: #fff;
+  background-color: #78cad2;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.contact__form__btn:hover {
+  background-color: #3fb3be;
+}
+
 /* Module import */
 /* Section import */
 /* General section container */
@@ -616,7 +632,7 @@ template {
   margin: 0;
   margin-right: 10px;
   padding: 0;
-  width: 10%;
+  width: 15%;
   height: 100%;
   border-right: 3px solid #243d53;
   top: 0;
@@ -644,6 +660,16 @@ template {
 }
 .sidebar ul li {
   text-align: center;
+}
+.sidebar__logo {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.sidebar__logo img {
+  filter: invert(100%);
+}
+.sidebar__logo:hover {
+  filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(1);
 }
 .sidebar .sidebar__socials {
   display: flex;
@@ -745,7 +771,6 @@ template {
   margin-top: 30px;
   margin-bottom: 30px;
   transition: 0.5s ease;
-  box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
 }
 .projects__element img {
   width: 100%;
@@ -770,6 +795,9 @@ template {
   font-size: 1rem;
   color: #78cad2;
 }
+.projects__element--img {
+  box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
+}
 .projects__element--info {
   margin-top: -25px;
   padding-top: 15px;
@@ -779,6 +807,7 @@ template {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: #1c3041;
+  box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
 }
 .projects__element:hover {
   transition: 0.5s ease;
@@ -891,7 +920,6 @@ template {
 .contact__form textarea::placeholder {
   padding-top: 8%;
 }
-
 /* Footer import */
 /* Footer Module */
 .footer-section {

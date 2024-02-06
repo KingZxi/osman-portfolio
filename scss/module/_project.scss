@@ -20,7 +20,6 @@
     margin-top: 30px;
     margin-bottom: 30px;
     transition: 0.5s ease;
-    box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
 
     img {
       width: 100%;
@@ -50,6 +49,10 @@
       color: $tiffany-blue;
     }
 
+    @include s-m(img) {
+      box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
+    }
+
     @include s-m(info) {
       margin-top: -25px;
       padding-top: 15px;
@@ -60,6 +63,7 @@
       border-bottom-right-radius: 5px;
       // background-color: #fff;
       background-color: $prussian-blue;
+      box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
     }
 
     &:hover {
