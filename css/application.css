@@ -731,17 +731,17 @@ a {
   flex-direction: column;
   gap: 3rem;
 }
-.sidebar .sidebar__navigation li {
+.sidebar .sidebar__navigation a {
   font-size: 1.25rem;
   font-weight: 600;
   text-decoration: none;
   position: relative;
 }
-.sidebar .sidebar__navigation li:hover {
+.sidebar .sidebar__navigation a:hover {
   color: #78cad2;
   cursor: pointer;
 }
-.sidebar .sidebar__navigation li:hover:after {
+.sidebar .sidebar__navigation a:hover:after {
   content: "";
   position: absolute;
   left: 0;
