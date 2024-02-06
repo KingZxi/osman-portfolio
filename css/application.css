@@ -869,7 +869,7 @@ a {
   display: grid;
   place-items: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   .about-container {
     display: block;
   }
@@ -887,7 +887,7 @@ a {
   height: 15rem;
   box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
 }
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   .about-container .profile-picture {
     display: block;
     margin-right: 10rem;
