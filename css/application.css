@@ -669,7 +669,7 @@ template {
   filter: invert(100%);
 }
 .sidebar__logo:hover {
-  filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(1);
+  filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-180deg) saturate(500%) contrast(1);
 }
 .sidebar .sidebar__socials {
   display: flex;
@@ -686,6 +686,9 @@ template {
     font-size: 2rem;
     flex-direction: row;
   }
+}
+.sidebar .sidebar__socials span {
+  transition: all 0.3s ease-in-out;
 }
 .sidebar .sidebar__socials span:hover {
   color: #78cad2;
