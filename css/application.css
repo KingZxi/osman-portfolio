@@ -512,7 +512,7 @@ template {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  gap: 40vh;
+  gap: 30vh;
 }
 .header .header-container h1 {
   display: flex;
