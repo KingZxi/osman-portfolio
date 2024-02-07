@@ -1,24 +1,18 @@
-/* Scion 1 module for scion page */
-.scion-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.scion-1 h2 {
-  text-align: left;
-  flex: 1 0 100%;
-}
-.scion-1 p {
-  flex: 1 0 75%;
-}
-.scion-1 img {
-  flex: 1 0 25%;
-  padding-left: 5px;
-  width: 25%;
-  height: 25%;
-  filter: invert(1) brightness(2);
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 30 | /     @include mq(medium) {
+ * 31 | |       display: flex;
+ * 32 | \     }
+ *    '
+ *   scss\module\scion-page\scion-1.scss 30:5  root stylesheet */
 
-/*# sourceMappingURL=scion-1.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 30 \2502  \250c      @include mq(medium) {\a 31 \2502  \2502        display: flex;\a 32 \2502  \2514      }\a    \2575 \a   scss\\module\\scion-page\\scion-1.scss 30:5  root stylesheet";
+}

@@ -1,6 +1,6 @@
 /* Scion 1 module for scion page */
 
-.scion-1-section {
+.scion-2-section {
 }
 
 .scion-2 {
@@ -20,9 +20,14 @@
   }
 
   img {
+    display: none;
     padding-right: 25px;
     flex: 1 1 25%;
     width: 20%;
     height: 20%;
+
+    @include mq(medium) {
+      display: flex;
+    }
   }
 }
