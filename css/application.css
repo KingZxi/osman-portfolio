@@ -1004,8 +1004,8 @@ a {
   gap: 15px;
 }
 
-/* Scion page imports */
-/* About me module */
+/* About page imports */
+/* About 2 module for about page */
 .about-1-section h2 {
   text-align: right;
 }
@@ -1058,7 +1058,7 @@ a {
   }
 }
 
-/* About me module */
+/* About 1 module for about page */
 .about-2-section h2 {
   text-align: center;
 }
@@ -1082,7 +1082,6 @@ a {
   gap: 10rem;
   width: 100%;
   font-size: 2.5rem;
-  overflow: hidden;
   list-style-type: none;
   cursor: pointer;
 }
@@ -1090,6 +1089,17 @@ a {
   .about-2 .socials {
     font-size: 2rem;
     flex-direction: row;
+  }
+}
+@keyframes floatSpin {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-10px) rotate(30deg);
+  }
+  100% {
+    transform: translateY(-5px) rotate(30deg);
   }
 }
 .about-2 .socials span {
@@ -1101,6 +1111,10 @@ a {
 .about-2 .socials li {
   display: inline;
   font-size: 5rem;
+  transition: all 0.3s ease-in-out;
+}
+.about-2 .socials li:hover {
+  animation: floatSpin 2s forwards;
 }
 .about-2__picture {
   display: flex;
@@ -1130,6 +1144,74 @@ a {
     height: 20rem;
     margin: 0;
   }
+}
+
+/* Scion page imports */
+/* Scion 1 module for scion page */
+.scion-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.scion-1 h2 {
+  text-align: left;
+  flex: 1 0 100%;
+}
+.scion-1 p {
+  flex: 1 0 75%;
+}
+.scion-1 img {
+  flex: 1 0 25%;
+  padding-left: 5px;
+  width: 25%;
+  height: 25%;
+  filter: invert(1) brightness(2);
+}
+
+/* Scion 1 module for scion page */
+.scion-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.scion-2 h2 {
+  text-align: right;
+  flex: 1 0 100%;
+}
+.scion-2 p {
+  flex: 1 0 75%;
+}
+.scion-2 img {
+  padding-right: 25px;
+  flex: 1 1 25%;
+  width: 20%;
+  height: 20%;
+}
+
+/* Scion 1 module for scion page */
+.scion-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.scion-3 h2 {
+  text-align: center;
+  flex: 1 0 100%;
+}
+.scion-3 p {
+  flex: 1 0 75%;
+}
+.scion-3 img {
+  flex: 1 0 25%;
+  width: 25%;
+  height: 25%;
+  filter: invert(1) brightness(2);
 }
 
 /*# sourceMappingURL=application.css.map */

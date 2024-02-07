@@ -1,4 +1,4 @@
-/* About me module */
+/* About 1 module for about page */
 
 .about-2-section {
   h2 {
@@ -25,7 +25,6 @@
     gap: 10rem;
     width: 100%;
     font-size: 2.5rem;
-    overflow: hidden;
     list-style-type: none;
     cursor: pointer;
 
@@ -34,18 +33,35 @@
       flex-direction: row;
     }
 
+    @keyframes floatSpin {
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+      75% {
+        transform: translateY(-10px) rotate(30deg);
+      }
+      100% {
+        transform: translateY(-5px) rotate(30deg);
+      }
+    }
+
     span {
-      transition: all 0.3s ease-in-out;
       &:hover {
         color: $tiffany-blue;
       }
+      transition: all 0.3s ease-in-out;
     }
 
     li {
       display: inline;
       font-size: 5rem;
+      &:hover {
+        animation: floatSpin 2s forwards;
+      }
+      transition: all 0.3s ease-in-out;
     }
   }
+
 
   @include s-e(picture) {
     display: flex;

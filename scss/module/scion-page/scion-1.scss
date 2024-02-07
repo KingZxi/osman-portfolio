@@ -1,0 +1,29 @@
+/* Scion 1 module for scion page */
+
+.scion-1-section {
+}
+
+.scion-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  h2 {
+    text-align: left;
+    flex: 1 0 100%;
+  }
+
+  p {
+    flex: 1 0 75%;
+  }
+
+  img {
+    flex: 1 0 25%;
+    padding-left: 5px;
+    width: 25%;
+    height: 25%;
+    filter: invert(1) brightness(2);
+  }
+}
