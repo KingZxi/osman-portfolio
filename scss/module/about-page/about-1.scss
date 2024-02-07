@@ -1,24 +1,40 @@
 /* About me module */
 
-.about-me {
-  display: grid;
-  place-items: center;
+.about-1-section {
+  h2 {
+    text-align: right;
+  }
+}
 
-  //   grid-template-columns: 1fr 1fr;
-  //   grid-template-areas: ;
-  //   gap: 20px;
+.about-1 {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-auto-rows: auto;
+  gap: 0px;
 
   //Tramsfers to a 1 column layout on smaller screens
   @include mq(xx-large) {
-    display: block;
+    display: grid;
+  }
+
+  .item2 {
+    grid-column: 2;
+    grid-row: 2;
+
+    li {
+      margin-bottom: 10px;
+    }
   }
 
   @include s-e(picture) {
-    display: grid;
-    float: right;
+    display: flex;
+    grid-column: 1;
+    grid-row: 2;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
     img {
       margin: auto;
-      margin-bottom: 20px;
       border: 3px solid $tiffany-blue;
       border-radius: 50%;
       width: 15rem;
@@ -29,9 +45,9 @@
     //Pushes profile picture from the right of the text to on top of it.
     @include mq(xx-large) {
       display: block;
+      margin: auto;
       margin-right: 10rem;
-      margin-left: 7.5rem;
-      margin-bottom: 2rem;
+      margin-left: 2.5rem;
 
       img {
         width: 20rem;

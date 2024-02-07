@@ -6,70 +6,73 @@
     align-self: flex-start;
   }
 
-  //lighten(#c0aada, 20%)
-}
+  .projects {
+    cursor: pointer;
 
-.projects {
-  cursor: pointer;
-  @include mq(large) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  @include s-e(element) {
-    margin: 0 15px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    transition: 0.5s ease;
-
-    img {
-      width: 100%;
-      height: 100%;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
+    //On large layouts, it transfers to two column layout
+    @include mq(large) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
     }
 
-    h3 {
-      margin-left: 10px;
-    }
-
-    p {
-      margin-left: 20px;
-      margin-right: 10px;
-    }
-
-    span {
-      margin-left: 15px;
-      font-size: 1.1rem;
-      color: $tiffany-blue;
-    }
-
-    .icon-arrow-right2 {
-      margin-left: 10px;
-      font-size: 1rem;
-      color: $tiffany-blue;
-    }
-
-    @include s-m(img) {
-      box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
-    }
-
-    @include s-m(info) {
-      margin-top: -25px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 1px solid $tiffany-blue;
-      border-top: none;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-      // background-color: #fff;
-      background-color: $prussian-blue;
-      box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
-    }
-
-    &:hover {
+    @include s-e(element) {
+      //Margin around each project element
+      margin: 0 15px;
+      margin-top: 30px;
+      margin-bottom: 30px;
       transition: 0.5s ease;
-      transform: translateY(-10px);
+
+      //Image in each project card
+      img {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+
+      //Text styling in each project card
+      h3 {
+        margin-left: 10px;
+      }
+
+      p {
+        margin-left: 20px;
+        margin-right: 10px;
+      }
+
+      span {
+        margin-left: 15px;
+        font-size: 1.1rem;
+        color: $tiffany-blue;
+      }
+
+      .icon-arrow-right2 {
+        margin-left: 10px;
+        font-size: 1rem;
+        color: $tiffany-blue;
+      }
+
+      @include s-m(img) {
+        box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
+      }
+
+      @include s-m(info) {
+        margin-top: -25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 1px solid $tiffany-blue;
+        border-top: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: $prussian-blue;
+        box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
+      }
+
+      &:hover {
+        transition: 0.5s ease;
+        transform: translateY(-10px);
+      }
     }
   }
 }

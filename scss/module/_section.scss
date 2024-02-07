@@ -5,6 +5,8 @@
   padding-right: 10px;
   margin: auto;
 
+  //Media queries which determine section widths, smaller screeens are given
+  //more container width to display content.
   @include mq(small) {
     width: 100%;
   }
@@ -22,10 +24,11 @@
   }
 }
 
+//Divider is used to divide off sections, though in theory the hr tag may be preferable.
 .divider {
   height: 30px;
   border-bottom: 2px solid darken($tiffany-blue, 20%);
-  // border-bottom-right-radius: 5px;
   margin-bottom: 20px;
+  // border-bottom-right-radius: 5px;
   // margin-right: 10px;
 }

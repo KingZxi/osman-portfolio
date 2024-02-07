@@ -21,4 +21,4 @@ These are some of the final changes I plan to make before submission:
 
 ## Personal goals:
 
-- Refactor code, things right now are quite messy.
+- Refactor code, things right now are quite messy. (Code is a bit nicer now, done)

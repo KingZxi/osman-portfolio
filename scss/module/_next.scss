@@ -1,10 +1,14 @@
+/* This module contains the next and back buttons */
+
+//Next button
 .next-button {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   gap: 10px;
-  cursor: pointer;
   transition: transform 0.3s ease;
+  cursor: pointer;
+
   span {
     align-self: center;
   }
@@ -29,13 +33,14 @@
   }
 }
 
+//Back button
 .back-button {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   gap: 10px;
-  cursor: pointer;
   transition: transform 0.3s ease;
+  cursor: pointer;
   span {
     align-self: center;
   }

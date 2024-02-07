@@ -5,11 +5,9 @@
   height: 100%;
   margin: auto;
   margin-bottom: 20px;
+  padding: 20px;
   border: 1px solid $tiffany-blue;
   border-radius: 5px;
-  padding: 20px;
-  //   background-color: lighten($grey, 45%);
-  //   background-color: $white;
   background-color: $prussian-blue;
   box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
 
@@ -20,8 +18,8 @@
     vertical-align: middle;
     gap: 30px;
 
+    //Field element also contains all the input and label elements and styles
     @include s-e(field) {
-      //flex: 1 0 40%;      label {
       display: block;
       margin-bottom: 20px;
       width: 100%;
@@ -31,52 +29,52 @@
         font-size: 10px;
         color: $grey;
       }
-    }
 
-    label {
-      font-weight: 700;
-    }
-
-    input {
-      height: 100%;
-    }
-
-    textarea {
-      height: 80%;
-      padding-top: 20px;
-      resize: vertical;
-    }
-
-    input,
-    textarea {
-      width: 95%;
-      margin-top: 10px;
-      margin-left: 10px;
-      padding-left: 15px;
-      border-radius: 5px;
-      background-color: darken($prussian-blue, 5%);
-      border: 1px solid lighten($grey, 20%);
-      color: $white;
-
-      &:focus-visible {
-        border: 1px solid lighten($tropical-indigo, 20%);
-        outline: 1px solid lighten($tiffany-blue, 20%);
+      label {
+        font-weight: 700;
       }
-    }
 
-    input::placeholder,
-    textarea::placeholder {
-      font-size: 12px;
-      color: lighten($grey, 15%);
-    }
+      input {
+        height: 100%;
+      }
 
-    input:focus-visible::placeholder,
-    textarea:focus-visible::placeholder {
-      visibility: hidden;
-    }
+      textarea {
+        height: 80%;
+        padding-top: 20px;
+        resize: vertical;
+      }
 
-    textarea::placeholder {
-      padding-top: 8%;
+      input,
+      textarea {
+        width: 95%;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding-left: 15px;
+        border-radius: 5px;
+        background-color: darken($prussian-blue, 5%);
+        border: 1px solid lighten($grey, 20%);
+        color: $white;
+
+        &:focus-visible {
+          border: 1px solid lighten($tropical-indigo, 20%);
+          outline: 1px solid lighten($tiffany-blue, 20%);
+        }
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        font-size: 12px;
+        color: lighten($grey, 15%);
+      }
+
+      input:focus-visible::placeholder,
+      textarea:focus-visible::placeholder {
+        visibility: hidden;
+      }
+
+      textarea::placeholder {
+        padding-top: 8%;
+      }
     }
 
     @include s-e(btn) {

@@ -18,13 +18,13 @@
 
 @import "sidebar";
 
-/* Project import */
-
-@import "project";
-
 /* About import */
 
 @import "about";
+
+/* Project import */
+
+@import "project";
 
 /* Contact import */
 
@@ -33,3 +33,8 @@
 /* Footer import */
 
 @import "footer";
+
+/* Scion page imports */
+
+@import "about-page/about-1";
+@import "about-page/about-2";

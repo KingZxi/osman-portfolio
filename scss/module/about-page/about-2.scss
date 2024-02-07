@@ -1,0 +1,80 @@
+/* About me module */
+
+.about-2-section {
+  h2 {
+    text-align: center;
+  }
+}
+
+.about-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  //Tramsfers to a 1 column layout on smaller screens
+  @include mq(xx-large) {
+    display: flex;
+  }
+
+  .socials {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10rem;
+    width: 100%;
+    font-size: 2.5rem;
+    overflow: hidden;
+    list-style-type: none;
+    cursor: pointer;
+
+    @include mq(xx-large) {
+      font-size: 2rem;
+      flex-direction: row;
+    }
+
+    span {
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: $tiffany-blue;
+      }
+    }
+
+    li {
+      display: inline;
+      font-size: 5rem;
+    }
+  }
+
+  @include s-e(picture) {
+    display: flex;
+    grid-column: 1;
+    grid-row: 2;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin: auto;
+      border: 3px solid $tiffany-blue;
+      border-radius: 50%;
+      width: 15rem;
+      height: 15rem;
+      box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
+    }
+
+    //Pushes profile picture from the right of the text to on top of it.
+    @include mq(xx-large) {
+      display: block;
+      margin-right: 10rem;
+      margin-left: 2.5rem;
+      margin-top: 0.5rem;
+
+      img {
+        width: 20rem;
+        height: 20rem;
+        margin: 0;
+      }
+    }
+  }
+}

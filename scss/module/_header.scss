@@ -1,11 +1,12 @@
 /* Header Module: */
 
+header,
 .header {
-  width: auto;
-  height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
+  // width: auto;
+  height: 100vh;
   background: linear-gradient(
     150deg,
     lighten($prussian-blue, 2%) 0%,
@@ -21,35 +22,40 @@
     height: 100%;
     gap: 30vh;
 
-    h1 {
+    h1,
+    .h1 {
       display: flex;
+      flex-grow: 1;
       font-size: 2rem;
       text-align: center;
-      flex-grow: 1;
       color: lighten($tiffany-blue, 20%);
 
-      @include mq(medium) {
-        font-size: 2.5rem;
-      }
+      //H1 will change size based on viewport size
+      //These are old media queries until I realized I could just use vw to adapt it based on viewport size.
+      //As of 07/02/2024 the media queries are more tested, so maybe consider changing back after testing
+      // @include mq(medium) {
+      //   font-size: 2.5rem;
+      // }
 
-      @include mq(large) {
-        font-size: 4rem;
-      }
+      // @include mq(large) {
+      //   font-size: 4rem;
+      // }
 
       @include mq(x-large) {
-        font-size: 5rem;
+        //font-size: 5rem;
+        font-size: 5vw;
       }
     }
 
-    //Animation for the typewriter effect
+    //Animation for the typewriter effect on h1
     .typewriter {
       //Credits to this effect goes to: https://css-tricks.com/snippets/css/typewriter-effect/
       //I did not come up with this by myself!
-      overflow: hidden;
-      border-right: 0.15em solid $tiffany-blue;
-      white-space: nowrap;
       margin: 0 auto;
+      border-right: 0.15em solid $tiffany-blue;
       letter-spacing: 0.05em;
+      white-space: nowrap;
+      overflow: hidden;
       @keyframes typing {
         from {
           width: 0;
