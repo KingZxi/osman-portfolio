@@ -1,16 +1,18 @@
 /* About us module */
 
-.about-container {
+.about-me {
   display: grid;
   place-items: center;
+
   //   grid-template-columns: 1fr 1fr;
   //   grid-template-areas: ;
   //   gap: 20px;
+
   @include mq(xx-large) {
     display: block;
   }
 
-  .profile-picture {
+  @include s-e(picture) {
     display: grid;
     float: right;
     img {

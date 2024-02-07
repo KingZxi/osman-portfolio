@@ -1,10 +1,12 @@
 /* Placeholders */
 
+//Placeholder that centers elements
 %center {
   margin-left: auto;
   margin-right: auto;
 }
 
+//Base button placeholder, most / all buttons will inherit from here
 %btn {
   padding: 10px 20px;
   border-radius: 5px;
@@ -14,8 +16,8 @@
   color: #fff;
   font-size: 1.25rem;
   font-weight: 700;
-  cursor: pointer;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     // background-color: darken($prussian-blue, 5%);

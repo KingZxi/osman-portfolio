@@ -119,7 +119,7 @@ label {
   content: "\eaca";
 }
 
-/* Font and icon Import */
+/* Normalize Import */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -456,8 +456,8 @@ template {
   color: #fff;
   font-size: 1.25rem;
   font-weight: 700;
-  cursor: pointer;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .contact__form__btn:hover {
   background-color: #3fb3be;
@@ -895,20 +895,20 @@ a {
 
 /* About import */
 /* About us module */
-.about-container {
+.about-me {
   display: grid;
   place-items: center;
 }
 @media (min-width: 1600px) {
-  .about-container {
+  .about-me {
     display: block;
   }
 }
-.about-container .profile-picture {
+.about-me__picture {
   display: grid;
   float: right;
 }
-.about-container .profile-picture img {
+.about-me__picture img {
   margin: auto;
   margin-bottom: 20px;
   border: 3px solid #78cad2;
@@ -918,13 +918,13 @@ a {
   box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
 }
 @media (min-width: 1600px) {
-  .about-container .profile-picture {
+  .about-me__picture {
     display: block;
     margin-right: 10rem;
     margin-left: 7.5rem;
     margin-bottom: 2rem;
   }
-  .about-container .profile-picture img {
+  .about-me__picture img {
     width: 20rem;
     height: 20rem;
     margin: 0;
