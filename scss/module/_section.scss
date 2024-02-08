@@ -12,11 +12,11 @@
   }
 
   @include mq(medium) {
-    width: 80%;
+    width: 90%;
   }
 
   @include mq(large) {
-    width: 70%;
+    width: 80%;
   }
 
   @include mq(x-large) {

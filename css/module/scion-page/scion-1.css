@@ -1,10 +1,10 @@
 /* Error: Undefined mixin.
  *    ,
- * 30 | /     @include mq(medium) {
- * 31 | |       display: flex;
- * 32 | \     }
+ * 31 | /     @include mq(medium) {
+ * 32 | |       display: flex;
+ * 33 | \     }
  *    '
- *   scss\module\scion-page\scion-1.scss 30:5  root stylesheet */
+ *   scss\module\scion-page\scion-1.scss 31:5  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 30 \2502  \250c      @include mq(medium) {\a 31 \2502  \2502        display: flex;\a 32 \2502  \2514      }\a    \2575 \a   scss\\module\\scion-page\\scion-1.scss 30:5  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 31 \2502  \250c      @include mq(medium) {\a 32 \2502  \2502        display: flex;\a 33 \2502  \2514      }\a    \2575 \a   scss\\module\\scion-page\\scion-1.scss 31:5  root stylesheet";
 }

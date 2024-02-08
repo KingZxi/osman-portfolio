@@ -18,7 +18,7 @@
   background-color: darken($prussian-blue, 0%);
 
   //Displays as block in larger displays
-  @include mq(medium) {
+  @include mq(large) {
     display: block;
   }
 
@@ -153,7 +153,7 @@
 
 .sidebar__button {
   display: flex;
-  @include mq(medium) {
+  @include mq(large) {
     display: none;
   }
   @include mq(tablet) {

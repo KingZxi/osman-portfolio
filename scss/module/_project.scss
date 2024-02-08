@@ -10,7 +10,7 @@
     cursor: pointer;
 
     //On large layouts, it transfers to two column layout
-    @include mq(large) {
+    @include mq(xx-large) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;

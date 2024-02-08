@@ -10,12 +10,12 @@
   display: flex;
   flex-direction: column;
   margin-left: 0;
-  
+
   //Margin left in these media queries is used to center the content in respect to
   //the sidebar, though I will likely use a different solution when implementing the JS,
   //as the goal is to make a responsive sidebar that can be toggled on and off and pushes the
   //content to the right when toggled on, so right now this is just a temporary solution.
-  @include mq(medium) {
+  @include mq(large) {
     margin-left: 21.5rem;
   }
   @include mq(tablet) {
