@@ -88,12 +88,14 @@
           <div class="header-container">
             <div></div>
             <div>
-              <div class="typewriter-contain">
-                <h1 class="typewriter"></h1>
-                <span class="caret"></span>
+              <div>
+                <div class="typewriter-contain">
+                  <h1 class="typewriter"></h1>
+                  <span class="caret"></span>
+                </div>
+                <p>I am an aspiring web developer...</p>
               </div>
             </div>
-            <p>I am an aspiring web developer...</p>
             <a href="#about">
               <div class="next-button">
                 <span class="next-button__text">Next Section</span>
@@ -258,8 +260,9 @@
       <div class="divider"></div>
       <section class="contact-section" id="contact">
         <h2>Contact:</h2>
+        <div id="error"></div>
         <div class="contact">
-          <form class="contact__form">
+          <form class="contact__form" id="contact">
             <!-- This form is to include a first name, last name, email address, subject, and message area (which is a textbox) -->
             <div class="contact__form__field">
               <label for="first-name">First name:</label>
@@ -307,7 +310,7 @@
               <textarea id="message" name="message" required> </textarea>
               <!-- placeholder="Enter your message here" -->
             </div>
-            <span class="contact__form__btn">Submit</span>
+            <span class="contact__form__btn" id="submit">Submit</span>
             <!-- I plan to add submission functionality through JS later -->
           </form>
         </div>
@@ -328,6 +331,7 @@
       </footer>
     </div>
     <div></div>
+    <script src="js/sign-up.js"></script>
     <script src="js/typewriter.js"></script>
   </body>
 </html>

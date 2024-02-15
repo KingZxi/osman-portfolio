@@ -529,7 +529,8 @@ template {
 /* Header Module: */
 #particles-js {
   position: absolute;
-  height: 102vh;
+  width: 100vw;
+  height: 103vh;
   z-index: -1;
   background: linear-gradient(150deg, #1f3548 0%, #14232f 50%, #14232f 100%);
 }
@@ -941,6 +942,20 @@ a {
 
 /* Contact import */
 /* Contact form module: */
+#error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#error ul {
+  text-decoration: none;
+  list-style-type: decimal;
+}
+#error li {
+  margin-bottom: 20px;
+  color: #ebf7f8;
+}
+
 .contact {
   width: 90%;
   height: 100%;
