@@ -1,4 +1,15 @@
 /* Header Module: */
+#particles-js {
+  position: absolute;
+  height: 102vh;
+  z-index: -1;
+  background: linear-gradient(
+    150deg,
+    lighten($prussian-blue, 2%) 0%,
+    darken($prussian-blue, 5%) 50%,
+    darken($prussian-blue, 5%) 100%
+  );
+}
 
 header,
 .header {
@@ -7,13 +18,13 @@ header,
   // align-items: center;
   // width: auto;
   height: 100vh;
-  background: linear-gradient(
-    150deg,
-    lighten($prussian-blue, 2%) 0%,
-    darken($prussian-blue, 5%) 50%,
-    darken($prussian-blue, 5%) 100%
-  );
-
+  // Removed background as it overlays particle.js
+  // background: linear-gradient(
+  //   150deg,
+  //   lighten($prussian-blue, 2%) 0%,
+  //   darken($prussian-blue, 5%) 50%,
+  //   darken($prussian-blue, 5%) 100%
+  // );
   .header-container {
     display: flex;
     justify-content: center;

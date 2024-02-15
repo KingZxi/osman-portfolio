@@ -527,11 +527,17 @@ template {
 
 /* Header import */
 /* Header Module: */
+#particles-js {
+  position: absolute;
+  height: 102vh;
+  z-index: -1;
+  background: linear-gradient(150deg, #1f3548 0%, #14232f 50%, #14232f 100%);
+}
+
 header,
 .header {
   display: flex;
   height: 100vh;
-  background: linear-gradient(150deg, #1f3548 0%, #14232f 50%, #14232f 100%);
 }
 header .header-container,
 .header .header-container {
