@@ -1,3 +1,8 @@
+
+
+<!-- 
+This all refers to an earlier version of the project before JS was intended to be implemented:
+
 # Final to-do list:
 
 These are some of the final changes I plan to make before submission:
@@ -21,4 +26,4 @@ These are some of the final changes I plan to make before submission:
 
 ## Personal goals:
 
-- Refactor code, things right now are quite messy. (Code is a bit nicer now, done)
+- Refactor code, things right now are quite messy. (Code is a bit nicer now, done) -->
