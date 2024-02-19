@@ -1152,7 +1152,7 @@ a {
   }
 }
 
-/* About 1 module for about page */
+/* About 2 module for about page */
 .about-2-section h2 {
   text-align: center;
 }
@@ -1170,13 +1170,13 @@ a {
 }
 .about-2 .socials {
   display: flex;
-  padding: 0;
   flex-direction: row;
   justify-content: center;
   gap: 2rem;
+  padding: 0;
   width: 100%;
-  font-size: 2.5rem;
   list-style-type: none;
+  font-size: 2.5rem;
   cursor: pointer;
 }
 @media (min-width: 768px) {
@@ -1194,11 +1194,8 @@ a {
     transform: translateY(-10px) rotate(30deg);
   }
   100% {
-    transform: translateY(-5px) rotate(30deg);
+    transform: translateY(-10px) rotate(30deg);
   }
-}
-.about-2 .socials span {
-  transition: all 0.3s ease-in-out;
 }
 .about-2 .socials span:hover {
   color: #78cad2;
@@ -1213,11 +1210,11 @@ a {
 }
 .about-2__picture {
   display: flex;
-  grid-column: 1;
-  grid-row: 2;
   vertical-align: middle;
   justify-content: center;
   align-items: center;
+  grid-column: 1;
+  grid-row: 2;
 }
 .about-2__picture img {
   margin: auto;
@@ -1272,7 +1269,7 @@ a {
   }
 }
 
-/* Scion 1 module for scion page */
+/* Scion 2 module for scion page */
 .scion-2 {
   display: flex;
   align-items: center;
@@ -1301,7 +1298,7 @@ a {
   }
 }
 
-/* Scion 1 module for scion page */
+/* Scion 3 module for scion page */
 .scion-3 {
   align-items: center;
   justify-content: center;

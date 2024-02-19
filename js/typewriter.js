@@ -4,6 +4,13 @@ const caret = document.querySelector(".caret");
 //Append more words here for typing and remoing effect
 const words = ["Osman Mahmood"];
 
+//If the h1 tag contains some text in the HTML, that will instead override anything in the words array.
+if (dynamicText.textContent.trim() !== "") {
+  words.length = 0;
+  words.push(dynamicText.textContent);
+} else {
+}
+
 let wordIndex = 0;
 let charIndex = 1;
 let speed = 100;

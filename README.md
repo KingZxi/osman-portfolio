@@ -1,5 +1,3 @@
-
-
 <!-- 
 This all refers to an earlier version of the project before JS was intended to be implemented:
 
