@@ -549,6 +549,12 @@ header .header-container,
   height: 100%;
   gap: 30vh;
 }
+header .header-container .header__text,
+.header .header-container .header__text {
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+}
 header .header-container h1,
 header .header-container .h1,
 .header .header-container h1,
@@ -571,7 +577,6 @@ header .header-container p,
 .header .header-container p {
   position: absolute;
   bottom: 40vh;
-  align-self: center;
 }
 header .header-container .typewriter,
 .header .header-container .typewriter {
@@ -808,34 +813,93 @@ a {
   }
 }
 
-.sidebar__button {
-  display: flex;
+/* Sidebar import */
+.topbar-section {
+  display: block;
   position: fixed;
-  z-index: 10;
-  top: 0px;
-  right: 0px;
-  cursor: pointer;
+  top: -100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 35vh;
+  z-index: 50000;
+  transition: all 0.3s ease;
+}
+.topbar-section .topbar {
+  display: flex;
+  justify-content: center;
+}
+.topbar-section .topbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+.topbar-section .topbar li {
+  display: block;
+  background-color: #14232f;
+  border-bottom: solid 2px #2c7d85;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+.topbar-section .topbar li:first-child {
+  border-top: solid 2px #2c7d85;
+}
+.topbar-section .topbar li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 2.3vh;
 }
 @media (min-width: 992px) {
-  .sidebar__button {
+  .topbar-section {
     display: none;
   }
 }
 @media screen and (max-width: 1000px) and (orientation: landscape) {
-  .sidebar__button {
+  .topbar-section {
     display: flex;
   }
 }
-.sidebar__button span {
+
+.menu-active {
+  top: 0%;
+}
+
+.topbar__button {
+  display: flex;
+  position: fixed;
+  z-index: 50001;
+  top: 0px;
+  right: 25px;
+  cursor: pointer;
+}
+.topbar__button span {
   font-size: 48px;
   font-weight: 100;
-  padding-right: 5px;
-  padding-left: 25px;
-  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  padding-top: 20px;
   border: 2px solid #1c3041;
+  border-top: 0;
   background-color: #243d53;
   color: #c5e8ec;
-  border-bottom-left-radius: 50px;
+}
+@media (min-width: 992px) {
+  .topbar__button {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+  .topbar__button {
+    display: flex;
+  }
 }
 
 /* About import */

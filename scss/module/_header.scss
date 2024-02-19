@@ -34,6 +34,12 @@ header,
     height: 100%;
     gap: 30vh;
 
+    .header__text {
+      width: 10vw;
+      display: flex;
+      justify-content: center;
+    }
+
     h1,
     .h1 {
       display: flex;
@@ -62,7 +68,6 @@ header,
     p {
       position: absolute;
       bottom: 40vh;
-      align-self: center;
     }
 
     //Animation for the typewriter effect on h1

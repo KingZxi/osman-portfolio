@@ -25,9 +25,20 @@
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <div class="sidebar__button">
+    <div class="topbar__button" id="menu-btn">
       <span class="icon-menu"></span>
     </div>
+    <section class="topbar-section">
+      <div class="topbar">
+        <ul class="topbar__navigation">
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="index.html#projects">My Portfolio</a></li>
+          <li><a href="examples.html">Coding Examples</a></li>
+          <li><a href="scion.html">SCS Scheme</a></li>
+          <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </section>
     <section class="sidebar-section">
       <div class="sidebar">
         <!-- Logo -->
@@ -88,7 +99,7 @@
           <div class="header-container">
             <div></div>
             <div>
-              <div>
+              <div class="header__text">
                 <div class="typewriter-contain">
                   <h1 class="typewriter"></h1>
                   <span class="caret"></span>
@@ -331,6 +342,7 @@
       </footer>
     </div>
     <div></div>
+    <script src="js/hamburger.js"></script>
     <script src="js/sign-up.js"></script>
     <script src="js/typewriter.js"></script>
   </body>

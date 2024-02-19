@@ -1,5 +1,7 @@
 const dynamicText = document.querySelector(".typewriter");
 const caret = document.querySelector(".caret");
+
+//Append more words here for typing and remoing effect
 const words = ["Osman Mahmood"];
 
 let wordIndex = 0;
@@ -23,12 +25,12 @@ const typeEffect = () => {
     // If this condition is true, remove the previous character
     charIndex--;
     setTimeout(typeEffect, 100);
-  } else {
-    //If word is deleted, next word will begin typing
-    // isDeleting = !isDeleting;
+  } else if (words.length > 1) {
+    // If word is deleted, next word will begin typing
+    isDeleting = !isDeleting;
     caret.classList.remove("stop-blinking");
-    // wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
-    // setTimeout(typeEffect, 1200);
+    wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
+    setTimeout(typeEffect, 1200);
   }
 };
 
