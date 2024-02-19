@@ -38,6 +38,8 @@ const typeEffect = () => {
     caret.classList.remove("stop-blinking");
     wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
     setTimeout(typeEffect, 1200);
+  } else {
+    caret.classList.remove("stop-blinking");
   }
 };
 
