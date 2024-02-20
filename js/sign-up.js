@@ -17,10 +17,13 @@ const errorDiv = document.getElementById("error");
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 let phoneRegex = /^(\+44|0)7\d{9}$/;
 
+//Errors array for storing error messages
+let errors = [];
+
 //This event is processed when the button is clicked
 submitButton.addEventListener("click", (e) => {
-  //Errors array for storing error messages
-  let errors = [];
+  ul.innerHTML = "";
+  errors.length = 0;
 
   //Validation
   if (firstName.value === "" || firstName.value == null) {
@@ -60,5 +63,6 @@ submitButton.addEventListener("click", (e) => {
     errorDiv.appendChild(ul);
   }
 
+  console.log(errors);
   form.submit();
 });

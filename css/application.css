@@ -1007,17 +1007,37 @@ a {
 /* Contact import */
 /* Contact form module: */
 #error {
+  position: block;
   display: flex;
   flex-direction: column;
   align-items: center;
+  right: 2rem;
+}
+@media (min-width: 1600px) {
+  #error {
+    position: absolute;
+    float: right;
+  }
 }
 #error ul {
   text-decoration: none;
   list-style-type: decimal;
+  animation: slideInFromRight 1s forwards;
 }
 #error li {
   margin-bottom: 20px;
-  color: #ebf7f8;
+  color: #9ed9df;
+  font-size: 1.25rem;
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .contact {

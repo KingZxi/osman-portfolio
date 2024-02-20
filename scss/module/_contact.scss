@@ -2,20 +2,40 @@
 
 //Container for handling errors
 #error {
+  position: block;
   display: flex;
   flex-direction: column;
   align-items: center;
+  right: 2rem;
+
+  @include mq(xx-large) {
+    position: absolute;
+    float: right;
+  }
+
   ul {
     text-decoration: none;
     list-style-type: decimal;
+    animation: slideInFromRight 1s forwards;
   }
 
   li {
     margin-bottom: 20px;
-    color: lighten($tiffany-blue, 30%);
+    color: lighten($tiffany-blue, 10%);
+    font-size: 1.25rem;
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 }
-
 .contact {
   width: 90%;
   height: 100%;
