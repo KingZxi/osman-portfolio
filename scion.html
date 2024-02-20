@@ -25,9 +25,20 @@
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <div class="sidebar__button">
+    <div class="topbar__button" id="menu-btn">
       <span class="icon-menu"></span>
     </div>
+    <section class="topbar-section">
+      <div class="topbar">
+        <ul class="topbar__navigation">
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="index.html#projects">My Portfolio</a></li>
+          <li><a href="examples.html">Coding Examples</a></li>
+          <li><a href="scion.html">SCS Scheme</a></li>
+          <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </section>
     <section class="sidebar-section">
       <div class="sidebar">
         <!-- Logo -->
@@ -80,15 +91,23 @@
       </div>
     </section>
     <div class="margin-to-sidebar">
-      <header class="header" id="header">
+      <div id="particles-js"></div>
+      <script src="js/plugins/particles.js"></script>
+      <script src="js/plugins/app.js"></script>
+      <header class="header">
         <section class="header-section">
           <div class="header-container">
             <div></div>
             <div>
-              <h1 class="typewriter">SCS Coalition</h1>
-              <p>Learn more about the Scion Coalition Scheme...</p>
+              <div class="header__text">
+                <div class="typewriter-contain">
+                  <h1 class="typewriter">Scion Coalition</h1>
+                  <span class="caret"></span>
+                </div>
+                <p>I am an aspiring web developer...</p>
+              </div>
             </div>
-            <a href="#main">
+            <a href="#about">
               <div class="next-button">
                 <span class="next-button__text">Next Section</span>
                 <span class="icon-arrow-down2"></span>
@@ -178,5 +197,8 @@
         </section>
       </footer>
     </div>
+    <script src="js/hamburger.js"></script>
+    <script src="js/sign-up.js"></script>
+    <script src="js/typewriter.js"></script>
   </body>
 </html>
