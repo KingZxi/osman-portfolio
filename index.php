@@ -151,18 +151,6 @@ include 'includes/header.php'; ?>
 <section class="contact-section" id="contact">
     <h2>Contact:</h2>
     <div class="contact__error">
-        <div class="contact__error__message">
-            <p>Name is required</p>
-        </div>
-        <div class="contact__error__message">
-            <p>Name is required</p>
-        </div>
-        <div class="contact__error__message">
-            <p>Name is required</p>
-        </div>
-        <div class="contact__success__message">
-            <p>Name is required</p>
-        </div>
     </div>
     <div class="contact">
         <form class="contact__form" id="contact" action="php/form-submission.php">
