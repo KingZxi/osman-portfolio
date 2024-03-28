@@ -1,4 +1,7 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+
+require '../vendor/autoload.php';
 include 'db.php';
 
 $errors = [];
@@ -39,6 +42,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         try {
             $stmt->execute();
+
+            //Sending email:
+            $phpmailer = new PHPMailer();
+            $phpmailer->isSMTP();
+            $phpmailer->Host = 'sandbox.smtp.mailtrap.io';
+            $phpmailer->SMTPAuth = true;
+            $phpmailer->Port = 2525;
+            $phpmailer->Username = 'c991462c8b91d7';
+            $phpmailer->Password = '793ef7243929ef';
+            $phpmailer->setFrom($email, $first_name . ' ' . $last_name);
+            $phpmailer->addAddress('osmanm02@outlook.com');
+            $phpmailer->Body = $message;
+            $phpmailer->send();
+
             echo json_encode(['success' => 'New record created successfully']);
         } catch(PDOException $e) {
             echo "Error: " . $sql . "<br>" . $e->getMessage();
