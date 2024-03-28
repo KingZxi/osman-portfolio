@@ -17,6 +17,7 @@
 body {
   margin: 0;
   background-color: #14232f;
+  overflow-x: clip;
 }
 
 h2,
@@ -1050,6 +1051,40 @@ a {
   border-radius: 5px;
   background-color: #1c3041;
   box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
+}
+.contact__error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__error__message {
+  background-color: #5d2121;
+  border: 1px solid #ff4e4e;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 100%;
+  color: #78cad2;
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+.contact__success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__success__message {
+  background-color: #275424;
+  border: 1px solid #7ad360;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 100%;
+  color: #78cad2;
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
 }
 .contact__form {
   display: flex;

@@ -10,6 +10,7 @@ body {
   //Body default has some margin, removing that:
   margin: 0;
   background-color: darken(#1c3041, 5%);
+  overflow-x: clip;
 }
 
 //Headings

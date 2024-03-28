@@ -47,6 +47,44 @@
   background-color: $prussian-blue;
   box-shadow: 0 3px 35px rgba(255, 255, 255, 0.1);
 
+  @include s-e(error) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include s-e(message) {
+      background-color: #5d2121;
+      border: 1px solid #ff4e4e;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      width: 100%;
+      color: $tiffany-blue;
+      text-align: center;
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  @include s-e(success) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include s-e(message) {
+      background-color: #275424;
+      border: 1px solid #7ad360;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      width: 100%;
+      color: $tiffany-blue;
+      text-align: center;
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+    }
+  }
+
   @include s-e(form) {
     display: flex;
     flex-direction: row;
